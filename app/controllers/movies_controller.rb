@@ -8,6 +8,10 @@ class MoviesController < ApplicationController
       @movie = Movie.find(id) # lookup movie by id
       # will render app/views/movies/show.html.haml by default
     end
+    
+    def new
+      @movie = Movie.new
+    end
     # add below all other methods
 private
 
